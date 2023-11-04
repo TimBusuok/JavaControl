@@ -6,8 +6,8 @@ import java.util.Random;
 public class Programs{
     public static void toys_inventory() throws IOException {
         try {
-            File filePath = new File("toys_inventory.txt");
-            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            File path = new File("C:\\Users\\Тимофей\\Desktop\\Работы\\КР\\ShopToy\\src\\SHOP\\toys_inventory");
+            BufferedReader reader = new BufferedReader(new FileReader(path));
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
@@ -18,8 +18,10 @@ public class Programs{
         }
     }
 
+
+
     public static void look_inventory() throws IOException {
-        File filePath = new File("inventory.txt");
+        File filePath = new File("C:\\Users\\Тимофей\\Desktop\\Работы\\КР\\ShopToy\\src\\SHOP\\inventory");
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
         String line;
         while ((line = reader.readLine()) != null) {
@@ -29,8 +31,8 @@ public class Programs{
     }
 
     public static void get() throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("toys_inventory.txt"));
-        BufferedWriter writer = new BufferedWriter(new FileWriter("inventory.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Тимофей\\Desktop\\Работы\\КР\\ShopToy\\src\\SHOP\\toys_inventory"));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Тимофей\\Desktop\\Работы\\КР\\ShopToy\\src\\SHOP\\inventory"));
 
         String line;
         while ((line = reader.readLine()) != null) {
